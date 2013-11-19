@@ -16,34 +16,59 @@ import week1.FrequentWords;
  * @author Patrick
  */
 public class GeneratingTheoreticalSpectrum {
-    FrequentWords frequentWords = new FrequentWords("a", 3, 2, true);
+    FrequentWords frequentWords = new FrequentWords("a", 3, 5, true);
     PeptideMassHashMap peptideMassHashMap = new PeptideMassHashMap();
     HashMap<String, Integer> peptideMass = peptideMassHashMap.getPeptideMassHashMap();
-    
-    public List<Integer> getCyclospectrum(String peptide) {
+
+    public List<Integer> getCyclingCyclospectrum(String peptide) {
         List<Integer> cyclospectrumList = new ArrayList();
         int peptideLength = peptide.length();
 
         cyclospectrumList.add(0);
 
         for (int i = 0; i < peptideLength; i++) {
-            List<String> stringPeptides = getMass(i, peptide);
+            List<String> stringPeptides = getCyclingPeptideStrings(i, peptide);
             for (String s : stringPeptides) {
                 int mass = calculateMass(s);
                 cyclospectrumList.add(mass);
             }
         }
-        
+
         Integer[] masses = cyclospectrumList.toArray(new Integer[cyclospectrumList.size()]);
         Arrays.sort(masses);
         cyclospectrumList.clear();
-        
+
         cyclospectrumList = Arrays.asList(masses);
 
         return cyclospectrumList;
     }
 
-    public List<String> getMass(int stringLength, String peptide) {
+    public List<Integer> getLinearCyclospectrum(String peptide) {
+        List<Integer> cyclospectrumList = new ArrayList();
+        int peptideLength = peptide.length();
+
+        cyclospectrumList.add(0);
+
+        for (int i = 1; i <= peptideLength; i++) {
+            List<String> stringPeptides = getLinearPeptideStrings(i, peptide);
+            for (String s : stringPeptides) {
+                int mass = calculateMass(s);
+                cyclospectrumList.add(mass);
+            }
+        }
+
+        //cyclospectrumList.add(calculateMass(peptide));
+
+        Integer[] masses = cyclospectrumList.toArray(new Integer[cyclospectrumList.size()]);
+        Arrays.sort(masses);
+        cyclospectrumList.clear();
+
+        cyclospectrumList = Arrays.asList(masses);
+
+        return cyclospectrumList;
+    }
+
+    public List<String> getCyclingPeptideStrings(int stringLength, String peptide) {
         List<String> peptideMassList = new ArrayList();
         for (int i = 0; i < peptide.length(); i++) {
             StringBuilder stringBuilder = new StringBuilder();
@@ -51,7 +76,7 @@ public class GeneratingTheoreticalSpectrum {
                 stringBuilder.append(peptide);
                 if (!frequentWords.alreadyExistsInList(peptideMassList, stringBuilder.toString())) {
                     peptideMassList.add(stringBuilder.toString());
-                }  
+                }
             } else {
                 if ((i + stringLength + 1) > peptide.length()) {
                     int rest = i + stringLength + 1 - peptide.length();
@@ -68,16 +93,28 @@ public class GeneratingTheoreticalSpectrum {
         }
         return peptideMassList;
     }
-    
+
+    public List<String> getLinearPeptideStrings(int stringLength, String peptide) {
+        List<String> linearPeptideStringList = new ArrayList();
+        int peptideLength = peptide.length();
+
+        for (int i = 0; i < peptideLength - stringLength + 1; i++) {
+            String peptideString = peptide.substring(i, i + stringLength);
+                linearPeptideStringList.add(peptideString);
+        }
+
+        return linearPeptideStringList;
+    }
+
     public int calculateMass(String peptide) {
         int mass = 0;
         int peptideLength = peptide.length();
-        
+
         for (int i = 0; i < peptideLength; i++) {
             String singleLetter = peptide.substring(i, i + 1);
             mass = mass + peptideMass.get(singleLetter);
         }
-        
+
         return mass;
     }
 }

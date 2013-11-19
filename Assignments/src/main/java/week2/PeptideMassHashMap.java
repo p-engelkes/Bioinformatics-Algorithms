@@ -25,10 +25,10 @@ public class PeptideMassHashMap {
         this.peptideMassHashMap.put("T", 101);
         this.peptideMassHashMap.put("C", 103);
         this.peptideMassHashMap.put("I", 113);
-        this.peptideMassHashMap.put("L", 113);
+        //this.peptideMassHashMap.put("L", 113);
         this.peptideMassHashMap.put("N", 114);
         this.peptideMassHashMap.put("D", 115);
-        this.peptideMassHashMap.put("Q", 128);
+        //this.peptideMassHashMap.put("Q", 128);
         this.peptideMassHashMap.put("K", 128);
         this.peptideMassHashMap.put("E", 129);
         this.peptideMassHashMap.put("M", 131);
@@ -41,6 +41,7 @@ public class PeptideMassHashMap {
     
     public HashMap<String, Integer> getPeptideMassHashMap() {
         return this.peptideMassHashMap;
+        
     }
     
 }
