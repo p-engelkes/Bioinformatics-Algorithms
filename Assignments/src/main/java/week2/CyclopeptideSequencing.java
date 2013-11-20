@@ -5,176 +5,100 @@ import java.util.*;
 /**
  * Date: 19.11.13 Time: 10:01
  */
+
+/*
+ LEADERBOARDCYCLOPEPTIDESEQUENCING(Spectrum, N)
+ Leaderboard ← {0-peptide}
+ LeaderPeptide ← 0-peptide
+ while Leaderboard is non-empty
+ Leaderboard ← Expand(Leaderboard)
+ for each Peptide in Leaderboard
+ if Mass(Peptide) = ParentMass(Spectrum)
+ if Score(Peptide, Spectrum) > Score(LeaderPeptide, Spectrum)
+ LeaderPeptide ← Peptide
+ else if Mass(Peptide) > ParentMass(Spectrum)
+ remove Peptide from Leaderboard
+ Leaderboard ← Cut(Leaderboard, Spectrum, N)
+ output LeaderPeptide
+ */
 public class CyclopeptideSequencing {
 
-    PeptideMassHashMap peptideMassHashMap = new PeptideMassHashMap();
+    String spectrum;
     int n;
-    HashMap<String, Integer> peptideMass = peptideMassHashMap.getPeptideMassHashMap();
-    List<String> stringPeptideList = new ArrayList();
-    GeneratingTheoreticalSpectrum gTS = new GeneratingTheoreticalSpectrum();
     int parentMass;
-
-    String sequence;
+    List<String> stringPeptideList = new ArrayList();
     List<Integer> spectrumList = new ArrayList();
+    HashMap<String, Integer> peptideMass;
+    PeptideMassHashMap peptideHashMap = new PeptideMassHashMap();
+    GeneratingTheoreticalSpectrum gTS = new GeneratingTheoreticalSpectrum();
 
-    public CyclopeptideSequencing(String sequence, int n) {
-        this.sequence = sequence;
+    public CyclopeptideSequencing(String spectrum, int n) {
+        this.spectrum = spectrum;
         this.n = n;
-        StringTokenizer stringTokenizer = new StringTokenizer(sequence);
-        while (stringTokenizer.hasMoreTokens()) {
-            spectrumList.add(Integer.parseInt(stringTokenizer.nextToken()));
-        }
-        this.parentMass = getParentMass();
+        this.spectrumList = createIntegerListFromString(this.spectrum);
+        this.parentMass = getParentMass(spectrumList);
+        this.peptideMass = peptideHashMap.getPeptideMassHashMap();
+
     }
 
     public String getCyclopeptideSequence() {
-        List<String> peptideToMass = new ArrayList();
-        String peptide = "";
-        List<String> peptideSequenceList = new ArrayList();
-        List<List<Object>> leaderboardList = new ArrayList();
-        stringPeptideList.add("");
-        while (!stringPeptideList.isEmpty()) {
-            peptideSequenceList.clear();
-            peptideSequenceList = copyStringList(stringPeptideList);
+        String cyclopeptideSequence = "";
+        List<String> highscore = new ArrayList();
+        List<List<Object>> leaderboard = new ArrayList();
+        this.stringPeptideList.add("");
+        while (!this.stringPeptideList.isEmpty()) {
+            highscore = copy(this.stringPeptideList);
             branch();
-            //bound();
-            leaderboardList = createLeaderboard();
-            stringPeptideList.clear();
-            for (List list : leaderboardList) {
-                stringPeptideList.add((String) list.get(1));
+            leaderboard = createLeaderboard();
+            this.stringPeptideList.clear();
+            for (List<Object> list : leaderboard) {
+                this.stringPeptideList.add((String) list.get(1));
             }
-            leaderboardList.clear();
-            if (stringPeptideList.isEmpty()) {
-                peptideToMass = stringPeptideToMass(peptideSequenceList);
-                peptide = peptideToMass.get(0);
-            }
-        }
-
-        return peptide;
-    }
-
-    public List<String> getCyclopeptideSequenceWithoutLeaderboard() {
-        List<String> peptideToMass = new ArrayList();
-        List<String> peptideSequenceList = new ArrayList();
-        getSpectrum();
-        while (!stringPeptideList.isEmpty()) {
-            peptideSequenceList.clear();
-            peptideSequenceList = copyStringList(stringPeptideList);
-            branch();
-            bound();
-            if (stringPeptideList.isEmpty()) {
-                peptideToMass = stringPeptideToMass(peptideSequenceList);
+            leaderboard.clear();
+            if (this.stringPeptideList.isEmpty()) {
+                cyclopeptideSequence = highscore.get(0);
+                cyclopeptideSequence = stringToMasses(cyclopeptideSequence);
             }
         }
-
-        return peptideToMass;
-    }
-
-    public void getSpectrum() {
-        for (Integer i : spectrumList) {
-            if (i <= 200) {
-                if (peptideMass.containsValue(i)) {
-                    Iterator iterator = peptideMass.entrySet().iterator();
-
-                    while (iterator.hasNext()) {
-                        Map.Entry pairs = (Map.Entry) iterator.next();
-                        if (pairs.getValue().equals(i)) {
-                            String pairString = (String) pairs.getKey();
-                            if (!exsitsInStringList(pairString, stringPeptideList)) {
-                                stringPeptideList.add(pairString);
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        return cyclopeptideSequence;
     }
 
     public void branch() {
-        List<String> listToBranch = copyStringList(stringPeptideList);
-        stringPeptideList.clear();
-        int listToExpandSize = listToBranch.size();
+        List<String> listToBranch = copyStringList(this.stringPeptideList);
+        this.stringPeptideList.clear();
+        int listToBranchSize = listToBranch.size();
 
-        for (int i = 0; i < listToExpandSize; i++) {
-
-            Iterator iterator = peptideMass.entrySet().iterator();
-
+        for (String s : listToBranch) {
+            Iterator iterator = this.peptideMass.entrySet().iterator();
             while (iterator.hasNext()) {
-                StringBuilder stringToExpand = new StringBuilder(listToBranch.get(i));
+                StringBuilder stringToExpand = new StringBuilder(s);
                 Map.Entry pairs = (Map.Entry) iterator.next();
-                stringToExpand.append((String) (pairs.getKey()));
-                stringPeptideList.add(stringToExpand.toString());
+                stringToExpand.append((String) pairs.getKey());
+                this.stringPeptideList.add(stringToExpand.toString());
             }
         }
     }
 
-    public void bound() {
-        List<String> listToBound = copyStringList(stringPeptideList);
-        stringPeptideList.clear();
-        for (String s : listToBound) {
-            List<Integer> theoreticalSpectrumList = gTS.getCyclingCyclospectrum(s);
-            Integer count = 0;
-            for (Integer integer : theoreticalSpectrumList) {
-                int theoreticalInt = countNumberInList(integer, theoreticalSpectrumList);
-                int practicalInt = countNumberInList(integer, spectrumList);
+    public List<List<Object>> createLeaderboard() {
+        List<List<Object>> leaderboard = new ArrayList();
+        List<List<Object>> leaderboardList;
+        for (String s : this.stringPeptideList) {
+            List<Object> scoreAndString = new ArrayList();
+            List<Integer> sequence = gTS.getCyclingCyclospectrum(s);
+            int mass = getParentMass(sequence);
+            if (mass <= this.parentMass) {
+                int score = calculateScore(s);
+                scoreAndString.add(score);
+                scoreAndString.add(s);
+                leaderboard.add(scoreAndString);
+            }
 
-                if (practicalInt >= theoreticalInt) {
-                    count++;
-                }
-            }
-            int stringLength = s.length();
-            if (count.equals(sum(stringLength) + 1)) {
-                stringPeptideList.add(s);
-            }
         }
-    }
+        sortList(leaderboard);
 
-    public List<String> stringPeptideToMass(List<String> stringPeptideList) {
-        List<String> peptideMassList = new ArrayList();
+        leaderboardList = cutLeaderboard(leaderboard);
 
-        for (String s : stringPeptideList) {
-            StringBuilder stringBuilder = new StringBuilder();
-            for (int i = 0; i < s.length(); i++) {
-                String peptide = String.valueOf(s.charAt(i));
-                if (i + 1 == s.length()) {
-                    stringBuilder.append(peptideMass.get(peptide));
-                } else {
-                    stringBuilder.append(peptideMass.get(peptide));
-                    stringBuilder.append("-");
-                }
-            }
-            peptideMassList.add(stringBuilder.toString());
-        }
-
-        return peptideMassList;
-    }
-
-    private boolean isPartOfList(List<Integer> listToContain, List<Integer> listToCompare) {
-        for (Integer i : listToContain) {
-            if (!existsInList(i, listToCompare)) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    private boolean exsitsInStringList(String stringToContain, List<String> listToCompare) {
-        for (String s : listToCompare) {
-            if (stringToContain.equals(s)) {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    private boolean existsInList(int intToContain, List<Integer> listToCompare) {
-        for (Integer i : listToCompare) {
-            if (intToContain == i) {
-                return true;
-            }
-        }
-        return false;
+        return leaderboardList;
     }
 
     private List<String> copyStringList(List<String> listToCopy) {
@@ -187,54 +111,24 @@ public class CyclopeptideSequencing {
         return copiedList;
     }
 
-    private int countNumberInList(int i, List<Integer> integerList) {
-        int count = 0;
-        for (Integer integer : integerList) {
-            if (integer.equals(i)) {
-                count++;
-            }
+    private List<Integer> createIntegerListFromString(String stringToList) {
+        List<Integer> stringList = new ArrayList();
+        StringTokenizer stringTokenizer = new StringTokenizer(stringToList);
+        while (stringTokenizer.hasMoreElements()) {
+            String token = (String) stringTokenizer.nextElement();
+            stringList.add(Integer.valueOf(token));
         }
 
-        return count;
+        return stringList;
     }
 
-    public int sum(int integer) {
-        int sum = 0;
-        for (int i = 0; i <= integer; i++) {
-            sum = sum + i;
-        }
-
-        return sum;
-    }
-
-    public List<List<Object>> createLeaderboard() {
-        List<List<Object>> leaderboardList = new ArrayList();
-        int highestScore = 0;
-        for (String s : stringPeptideList) {
-            int massOfPeptide = getMass(s);
-            if (massOfPeptide <= this.parentMass) {
-                List<Object> helpList = new ArrayList();
-                int score = calculateScore(s);
-                if (score >= highestScore) {
-                    helpList.add(score);
-                    helpList.add(s);
-                    leaderboardList.add(helpList);
-                }
-            }
-        }
-        sortList(leaderboardList);
-        leaderboardList = cutOffLeaderboardList(leaderboardList);
-
-        return leaderboardList;
-    }
-
-    public int getMass(String peptide) {
+    private int getParentMass(List<Integer> spectrumList) {
         int mass = 0;
-        int peptideLength = peptide.length();
 
-        for (int i = 0; i < peptideLength; i++) {
-            String massString = String.valueOf(peptide.charAt(i));
-            mass = mass + peptideMass.get(massString);
+        for (Integer i : spectrumList) {
+            if (i > mass) {
+                mass = i;
+            }
         }
 
         return mass;
@@ -242,45 +136,61 @@ public class CyclopeptideSequencing {
 
     public int calculateScore(String peptide) {
         int score = 0;
-        List<Integer> spectrum = gTS.getCyclingCyclospectrum(peptide);
+        List<Integer> cycling = gTS.getCyclingCyclospectrum(peptide);
+        List<Integer> alreadyCounted = new ArrayList();
 
-        for (Integer i : spectrum) {
-            if (existsInList(i, this.spectrumList)) {
-                score++;
+        for (Integer i : cycling) {
+            if (!existsInList(i, alreadyCounted)) {
+                int count = countInList(i, cycling);
+                int countSpectrum = countInList(i, this.spectrumList);
+                score = score + score(count, countSpectrum);
+                alreadyCounted.add(i);
             }
-
         }
 
         return score;
     }
 
-    public List<List<Object>> cutOffLeaderboardList(List<List<Object>> leaderboardList) {
-        int cutOffLimit = n;
-        if (leaderboardList.size() > n) {
-            int cutOff = (Integer) leaderboardList.get(cutOffLimit).get(0);
-            while (cutOffLimit < leaderboardList.size() - 1 && cutOff == (Integer) leaderboardList.get(1 + cutOffLimit).get(0)) {
-                cutOffLimit = cutOffLimit + 1;
+    public int countInList(int intToCount, List<Integer> listToCountIn) {
+        int count = 0;
+
+        for (Integer i : listToCountIn) {
+            if (i.equals(intToCount)) {
+                count++;
             }
-
         }
-        int leaderboardListSize = leaderboardList.size();
-        List<List<Object>> listToReturn;
-        if (cutOffLimit < leaderboardListSize) {
-            listToReturn = leaderboardList.subList(0, cutOffLimit);
+        return count;
+    }
+
+    public boolean existsInList(int intToExist, List<Integer> listToCompare) {
+        for (Integer i : listToCompare) {
+            if (i.equals(intToExist)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public int score(int count, int countSpectrum) {
+        int score = 0;
+
+        if (count > countSpectrum) {
+            score = score + countSpectrum;
         } else {
-            listToReturn = leaderboardList.subList(0, leaderboardListSize);
+            score = score + count;
         }
-        
 
-        return listToReturn;
+        return score;
     }
 
     public List<List<Object>> sortList(List<List<Object>> listToSort) {
+        int listSize = listToSort.size();
         boolean swapped;
-        int sortListSize = listToSort.size();
+
         do {
             swapped = false;
-            for (int i = 0; i < sortListSize - 1; i++) {
+            for (int i = 0; i < listSize - 1; i++) {
                 int one = (Integer) listToSort.get(i).get(0);
                 int two = (Integer) listToSort.get(i + 1).get(0);
                 if (one < two) {
@@ -293,15 +203,53 @@ public class CyclopeptideSequencing {
         return listToSort;
     }
 
-    public int getParentMass() {
-        int mass = 0;
+    public List<List<Object>> cutLeaderboard(List<List<Object>> listToCut) {
+        int cutOff = this.n;
+        int listSize = listToCut.size();
+        List<List<Object>> listToReturn;
 
-        for (Integer i : spectrumList) {
-            if (i > mass) {
-                mass = i;
+        if (cutOff < listSize - 1) {
+            int lowestScore = (Integer) listToCut.get(cutOff - 1).get(0);
+            while (cutOff < listSize && lowestScore == (Integer) listToCut.get(cutOff).get(0)) {
+                cutOff++;
             }
         }
 
-        return mass;
+        if (listToCut.isEmpty()) {
+            listToReturn = listToCut;
+        } else {
+            if (cutOff >= listSize) {
+                listToReturn = listToCut;
+            } else {
+                listToReturn = listToCut.subList(0, cutOff);
+            }
+            
+        }
+
+        return listToReturn;
     }
+
+    private List<String> copy(List<String> listToCopy) {
+        List<String> copiedList = new ArrayList();
+
+        for (String s : listToCopy) {
+            copiedList.add(s);
+        }
+
+        return copiedList;
+    }
+    
+    private String stringToMasses(String peptide) {
+        String peptideMasses = "";
+        int mass;
+        int peptideLength = peptide.length();
+        for (int i = 0; i < peptideLength; i++) {
+            String s = String.valueOf(peptide.charAt(i));
+            mass = this.peptideMass.get(s);
+            peptideMasses = peptideMasses + mass + "-";
+        }
+        
+        return peptideMasses;
+    }
+
 }
