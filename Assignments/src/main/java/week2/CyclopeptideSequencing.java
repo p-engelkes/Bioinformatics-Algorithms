@@ -26,11 +26,13 @@ public class CyclopeptideSequencing {
     String spectrum;
     int n;
     int parentMass;
+    int globalMass;
     List<String> stringPeptideList = new ArrayList();
     List<Integer> spectrumList = new ArrayList();
     HashMap<String, Integer> peptideMass;
     PeptideMassHashMap peptideHashMap = new PeptideMassHashMap();
     GeneratingTheoreticalSpectrum gTS = new GeneratingTheoreticalSpectrum();
+    List<List<Object>> globalLeaderboard = new ArrayList();
 
     public CyclopeptideSequencing(String spectrum, int n) {
         this.spectrum = spectrum;
@@ -54,9 +56,11 @@ public class CyclopeptideSequencing {
             for (List<Object> list : leaderboard) {
                 this.stringPeptideList.add((String) list.get(1));
             }
+            copyList(leaderboard);
+            sortList(this.globalLeaderboard);
             leaderboard.clear();
             if (this.stringPeptideList.isEmpty()) {
-                cyclopeptideSequence = highscore.get(0);
+                cyclopeptideSequence = (String) this.globalLeaderboard.get(0).get(1);
                 cyclopeptideSequence = stringToMasses(cyclopeptideSequence);
             }
         }
@@ -82,23 +86,49 @@ public class CyclopeptideSequencing {
     public List<List<Object>> createLeaderboard() {
         List<List<Object>> leaderboard = new ArrayList();
         List<List<Object>> leaderboardList;
+        int globalScore = calculateGlobalScore();
+        calculateGlobalMass();
         for (String s : this.stringPeptideList) {
             List<Object> scoreAndString = new ArrayList();
             List<Integer> sequence = gTS.getCyclingCyclospectrum(s);
             int mass = getParentMass(sequence);
             if (mass <= this.parentMass) {
                 int score = calculateScore(s);
-                scoreAndString.add(score);
-                scoreAndString.add(s);
-                leaderboard.add(scoreAndString);
-            }
+                    if (score > globalScore && globalMass != this.parentMass) {
+                        scoreAndString.add(score);
+                        scoreAndString.add(s);
+                        leaderboard.add(scoreAndString);
+                    }
 
+            }
         }
         sortList(leaderboard);
 
         leaderboardList = cutLeaderboard(leaderboard);
 
         return leaderboardList;
+    }
+    
+    private void calculateGlobalMass() {
+        if (!this.globalLeaderboard.isEmpty()) {
+            List<Object> globalMassList = this.globalLeaderboard.get(0);
+        List<Integer> globalMassIntList = gTS.getCyclingCyclospectrum((String) globalMassList.get(1));
+        
+        this.globalMass = getParentMass(globalMassIntList);
+        } else {
+            this.globalMass = 0;
+        }
+        
+    }
+    
+    private int calculateGlobalScore() {
+        int score = 0;
+        
+        if (!this.globalLeaderboard.isEmpty()) {
+            score = (Integer)this.globalLeaderboard.get(0).get(0);
+        }
+        
+        return score;
     }
 
     private List<String> copyStringList(List<String> listToCopy) {
@@ -223,7 +253,7 @@ public class CyclopeptideSequencing {
             } else {
                 listToReturn = listToCut.subList(0, cutOff);
             }
-            
+
         }
 
         return listToReturn;
@@ -238,7 +268,7 @@ public class CyclopeptideSequencing {
 
         return copiedList;
     }
-    
+
     private String stringToMasses(String peptide) {
         String peptideMasses = "";
         int mass;
@@ -248,8 +278,15 @@ public class CyclopeptideSequencing {
             mass = this.peptideMass.get(s);
             peptideMasses = peptideMasses + mass + "-";
         }
-        
+
         return peptideMasses;
+    }
+
+    private void copyList(List<List<Object>> listToCopy) {
+        for (List<Object> list : listToCopy) {
+            this.globalLeaderboard.add(list);
+        }
+
     }
 
 }
