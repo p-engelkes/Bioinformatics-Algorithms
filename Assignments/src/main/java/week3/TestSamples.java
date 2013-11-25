@@ -1,4 +1,4 @@
-package Week3;
+package week3;
 
 import java.util.List;
 
@@ -9,14 +9,15 @@ import java.util.List;
 public class TestSamples {
 
     public static void main(String[] args) {
-        String dna = "TACACACATGTTATAGAGAGTTGTC GGTTTCTGTTCCGGTAGTTGCTGTA ATATAGTGAGCTGATTATTCGAACC CTCTAACAAGGTTAACTGTAAGAAT TATTAGCGGCTTCAATTTTAGCGCT CATTAGCCCTGTATAATGCTTCCAC";
-        int k = 5;
+        String dna = "TGATGATAACGTGACGGGACTCAGCGGCGATGAAGGATGAGT CAGCGACAGACAATTTCAATAATATCCGCGGTAAGCGGCGTA TGCAGAGGTTGGTAACGCCGGCGACTCGGAGAGCTTTTCGCT TTTGTCATGAACTCAGATACCATAGAGCACCGGCGAGACTCA ACTGGGACTTCACATTAGGTTGAACCGCGAGCCAGGTGGGTG TTGCGGACGGGATACTCAATAACTAAGGTAGTTCAGCTGCGA TGGGAGGACACACATTTTCTTACCTCTTCCCAGCGAGATGGC GAAAAAACCTATAAAGTCCACTCTTTGCGGCGGCGAGCCATA CCACGTCCGTTACTCCGTCGCCGTCAGCGATAATGGGATGAG CCAAAGCTGCGAAATAACCATACTCTGCTCAGGAGCCCGATG";
+        int k = 6;
         int d = 2;
-        MotifEnumeration motifEnumeration = new MotifEnumeration(dna, k, d);
-        List<String> resultList = motifEnumeration.calculateMotifEnumeration();
-
-        for (String s : resultList) {
-            System.out.print(s + " ");
-        }
+        MedianString medianString = new week3.MedianString(dna, k);
+        List<Object> hammingDistance = medianString.calculateMedianString().get(0); 
+        String bestMedian = (String) hammingDistance.get(1);
+        int distance = (Integer) hammingDistance.get(0);
+        
+        System.out.println(distance);
+        System.out.print(bestMedian);
     }
 }

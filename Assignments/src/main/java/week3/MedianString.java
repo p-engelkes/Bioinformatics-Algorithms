@@ -1,4 +1,4 @@
-package Week3;
+package week3;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,17 +22,66 @@ public class MedianString {
     public List<List<Object>> calculateMedianString() {
         List<List<Object>> bestKMer = new ArrayList<List<Object>>();
         List<String> allKMers = calculateAllKMers();
-
-        for (String s : allKMers) {
-            calculateScore(s);
+        int smallestHammingDistance = allKMers.size();
+        
+        for (String pattern : allKMers) {
+            List<Object> helpList = new ArrayList<Object>();
+            int totalHammingDistance = calculateTotalHammingDistance(pattern);
+            if (totalHammingDistance < smallestHammingDistance) {
+                if (bestKMer.size() > 0) {
+                    bestKMer.remove(0);
+                    helpList.add(totalHammingDistance);
+                    helpList.add(pattern);
+                    bestKMer.add(helpList);
+                    smallestHammingDistance = totalHammingDistance;
+                } else {
+                    helpList.add(totalHammingDistance);
+                    helpList.add(pattern);
+                    bestKMer.add(helpList);
+                    smallestHammingDistance = totalHammingDistance;
+                }
+            }
         }
 
         return bestKMer;
     }
 
-    public int calculateScore(String s) {
-
-        return 0;
+    public int calculateTotalHammingDistance(String pattern) {
+        int totalHammingDistance = 0;
+        
+        for (String text : this.dnaList) {
+            totalHammingDistance = totalHammingDistance + calculateHammingDistance(pattern, text);
+        }
+        return totalHammingDistance;
+    }
+    
+    public int calculateHammingDistance(String pattern, String text) {
+        int textLength = text.length();
+        int hammingDistance = textLength;
+        int patternLength = pattern.length();
+        
+        for (int i = 0; i < textLength - patternLength; i++) {
+            String substringToCompare = text.substring(i, i + patternLength);
+            int distance = calculateDistance(pattern, substringToCompare);
+            if (distance < hammingDistance) {
+                hammingDistance = distance;
+            }
+        }
+        
+        return hammingDistance;
+    }
+    
+    public int calculateDistance(String pattern, String substringToCompare) {
+        int distance = 0;
+        int substringLength = substringToCompare.length();
+        
+        for (int i = 0; i < substringLength; i++) {
+            if (pattern.charAt(i) != (substringToCompare.charAt(i))) {
+                distance++;
+            }
+        }
+            
+        return distance;    
     }
 
     public List<String> calculateAllKMers() {
