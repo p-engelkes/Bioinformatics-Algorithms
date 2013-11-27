@@ -21,12 +21,8 @@ public class MostProbableKMer {
     List<String> matrixList;
     List<Double> A = new ArrayList<Double>();
     List<Double> C = new ArrayList<Double>();
-    ;
     List<Double> G = new ArrayList<Double>();
-    ;
     List<Double> T = new ArrayList<Double>();
-
-    ;
 
     public MostProbableKMer(String text, int k, String matrix) {
         this.text = text;
@@ -38,10 +34,10 @@ public class MostProbableKMer {
     public List<List<Object>> calculateMostProbableKMer() {
         List<List<Object>> mostProbableKMer = new ArrayList<List<Object>>();
         List<String> allKMers = getAllKMers();
-        double highestProbability = 0;
-        
+        double highestProbability = -1;
+
         letterSplit();
-        
+
         for (String s : allKMers) {
             double probability = calculateProbability(s);
             List<Object> helpList = new ArrayList<Object>();
@@ -60,13 +56,42 @@ public class MostProbableKMer {
                 }
             }
         }
-        
+
+        return mostProbableKMer;
+    }
+    
+    public List<List<Object>> calculateGreedyMostPopularKMer() {
+        List<List<Object>> mostProbableKMer = new ArrayList<List<Object>>();
+        List<String> allKMers = getAllKMers();
+        double highestProbability = -1;
+
+        greedyLetterSplit(matrixList);
+
+        for (String s : allKMers) {
+            double probability = calculateProbability(s);
+            List<Object> helpList = new ArrayList<Object>();
+            if (probability > highestProbability) {
+                if (mostProbableKMer.size() > 0) {
+                    mostProbableKMer.remove(0);
+                    helpList.add(probability);
+                    helpList.add(s);
+                    mostProbableKMer.add(helpList);
+                    highestProbability = probability;
+                } else {
+                    helpList.add(probability);
+                    helpList.add(s);
+                    mostProbableKMer.add(helpList);
+                    highestProbability = probability;
+                }
+            }
+        }
+
         return mostProbableKMer;
     }
 
     public List<String> firstStringSplit(String matrix) {
         List<String> matrixString = new ArrayList<String>();
-        StringTokenizer stringTokenizer = new StringTokenizer(matrix);
+        StringTokenizer stringTokenizer = new StringTokenizer(matrix, "/n");
 
         while (stringTokenizer.hasMoreElements()) {
             matrixString.add((String) stringTokenizer.nextElement());
@@ -78,19 +103,51 @@ public class MostProbableKMer {
     public void letterSplit() {
         int size = this.matrixList.size();
         for (int i = 0; i < size; i++) {
-            switch (i % 4) {
-                case 0:
-                    this.A.add(Double.valueOf(this.matrixList.get(i)));
-                    break;
-                case 1:
-                    this.C.add(Double.valueOf(this.matrixList.get(i)));
-                    break;
-                case 2:
-                    this.G.add(Double.valueOf(this.matrixList.get(i)));
-                    break;
-                case 3:
-                    this.T.add(Double.valueOf(this.matrixList.get(i)));
-                    break;
+            String s = this.matrixList.get(i);
+            StringTokenizer stringTokenizer = new StringTokenizer(s);
+            int j = 0;
+            while (stringTokenizer.hasMoreElements()) {
+                switch (j) {
+                    case 0:
+                        this.A.add(Double.valueOf((String)stringTokenizer.nextElement()));
+                        j++;
+                        break;
+                    case 1:
+                        this.C.add(Double.valueOf((String)stringTokenizer.nextElement()));
+                        j++;
+                        break;
+                    case 2:
+                        this.G.add(Double.valueOf((String)stringTokenizer.nextElement()));
+                        j++;
+                        break;
+                    case 3:
+                        this.T.add(Double.valueOf((String)stringTokenizer.nextElement()));
+                        break;
+                }
+            }
+        }
+    }
+
+    public void greedyLetterSplit(List<String> motifList) {
+        String substring;
+        
+        for (String s : motifList) {
+            for (int i = 0; i < 4; i++) {
+                substring = s.substring(i, i + 1);
+                switch (i) {
+                    case 0:
+                        this.A.add(Double.valueOf(substring));
+                        break;
+                    case 1:
+                        this.C.add(Double.valueOf(substring));
+                        break;
+                    case 2:
+                        this.G.add(Double.valueOf(substring));
+                        break;
+                    case 3:
+                        this.T.add(Double.valueOf(substring));
+                        break;
+                }
             }
         }
     }
@@ -106,11 +163,11 @@ public class MostProbableKMer {
 
         return resultList;
     }
-    
+
     public double calculateProbability(String s) {
         int stringLength = s.length();
         double probability = 1;
-        
+
         for (int i = 0; i < stringLength; i++) {
             Character character = s.charAt(i);
             switch (character) {
@@ -128,7 +185,7 @@ public class MostProbableKMer {
                     break;
             }
         }
-        
+
         return probability;
     }
 }
