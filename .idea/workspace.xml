@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dc343e5-1085-4f75-9235-1cf958b4958f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week4/StringReconstruction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week4/StringReconstructionTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="DELETED" beforePath="C:\Users\Patrick\workspace\Bioinformatics-Algorithms\Assignments\src\test\java\week1\ApproximatePatternMatchingTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Patrick\workspace\Bioinformatics-Algorithms\Assignments\src\test\java\week1\ClumpFindingTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Patrick\workspace\Bioinformatics-Algorithms\Assignments\src\test\java\week1\FrequentWordsTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Patrick\workspace\Bioinformatics-Algorithms\Assignments\src\test\java\week1\PatternMatchingTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Patrick\workspace\Bioinformatics-Algorithms\Assignments\src\test\java\week1\ReverseComplementTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Patrick\workspace\Bioinformatics-Algorithms\Assignments\src\test\java\week2\ConvolutionSpectrumTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Patrick\workspace\Bioinformatics-Algorithms\Assignments\src\test\java\week2\CyclopeptideSequencingTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Patrick\workspace\Bioinformatics-Algorithms\Assignments\src\test\java\week2\LeaderboardCyclopeptideSequencingTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Patrick\workspace\Bioinformatics-Algorithms\Assignments\src\test\java\week2\PeptideEncodingTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Patrick\workspace\Bioinformatics-Algorithms\Assignments\src\test\java\week2\ProteinTranslationTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Patrick\workspace\Bioinformatics-Algorithms\Assignments\src\test\java\week3\GreedyMotifSearchTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Patrick\workspace\Bioinformatics-Algorithms\Assignments\src\test\java\week3\MedianStringTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Patrick\workspace\Bioinformatics-Algorithms\Assignments\src\test\java\week3\MotifEnumerationTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Patrick\workspace\Bioinformatics-Algorithms\Assignments\src\test\java\week3\StringToListTest.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assignments/src/main/main.iml" afterPath="$PROJECT_DIR$/Assignments/src/main/main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assignments/src/main/java/week4/DeBruijnString.java" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week4/DeBruijnString.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assignments/src/main/java/week4/DeBruijnStringTest.java" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week4/DeBruijnStringTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Bioinformatics-Algorithms.iws" />
@@ -88,13 +71,8 @@
       <file leaf-file-name="StringReconstruction.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/StringReconstruction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="1190" selection-end="1190" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#433#441#0" expanded="true" />
-                <element signature="e#490#498#0" expanded="true" />
-                <element signature="e#755#763#0" expanded="true" />
-              </folding>
+            <state line="45" column="0" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.0" vertical-offset="387" max-vertical-offset="918">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -103,21 +81,45 @@
         <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/StringReconstructionTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="36" column="8" selection-start="907" selection-end="907" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="986">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestSamples.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/TestSamples.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="80" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#648#656#0" expanded="true" />
-                <element signature="e#1064#1072#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestSamples.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/TestSamples.java">
+      <file leaf-file-name="DeBruijnString.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/DeBruijnString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="80" selection-start="283" selection-end="283" vertical-scroll-proportion="0.38477367" vertical-offset="0" max-vertical-offset="493">
+            <state line="35" column="0" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.7758945" vertical-offset="183" max-vertical-offset="1360">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#471#493#0" expanded="true" />
+                <element signature="e#1021#1043#0" expanded="true" />
+                <element signature="e#1304#1312#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeBruijnStringTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/DeBruijnStringTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="35" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0" vertical-offset="166" max-vertical-offset="1037">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#582#590#0" expanded="true" />
+                <element signature="e#820#828#0" expanded="true" />
+                <element signature="e#1142#1150#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,13 +128,8 @@
       <file leaf-file-name="OverlapGraph.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/OverlapGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="10" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1564">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1092#1100#0" expanded="true" />
-                <element signature="e#1730#1744#0" expanded="true" />
-                <element signature="e#1879#1887#0" expanded="true" />
-              </folding>
+            <state line="17" column="10" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1564">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -140,15 +137,8 @@
       <file leaf-file-name="OverlapGraphTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/OverlapGraphTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="24" selection-start="268" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
-              <folding>
-                <element signature="e#597#611#0" expanded="true" />
-                <element signature="e#659#667#0" expanded="true" />
-                <element signature="e#715#723#0" expanded="true" />
-                <element signature="e#773#781#0" expanded="true" />
-                <element signature="e#830#838#0" expanded="true" />
-                <element signature="e#1459#1467#0" expanded="true" />
-              </folding>
+            <state line="14" column="24" selection-start="268" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1445">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -171,6 +161,8 @@
         <option value="$PROJECT_DIR$/Assignments/src/main/java/week4/OverlapGraphTest.java" />
         <option value="$PROJECT_DIR$/Assignments/src/main/java/week4/OverlapGraph.java" />
         <option value="$PROJECT_DIR$/Assignments/src/main/java/week4/TestSamples.java" />
+        <option value="$PROJECT_DIR$/Assignments/src/main/java/week4/DeBruijnStringTest.java" />
+        <option value="$PROJECT_DIR$/Assignments/src/main/java/week4/DeBruijnString.java" />
       </list>
     </option>
   </component>
@@ -280,6 +272,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -332,7 +325,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -354,37 +346,15 @@
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="week4" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
       <recent name="junit.framework.TestCase" />
     </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="week4" />
-    </key>
   </component>
-  <component name="RunManager" selected="Application.TestSamples">
-    <configuration default="false" name="StringReconstructionTest.testSortLexicographic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="main" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="week4" />
-      <option name="MAIN_CLASS_NAME" value="week4.StringReconstructionTest" />
-      <option name="METHOD_NAME" value="testSortLexicographic" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.DeBruijnStringTest.testRemoveMultipleValues">
     <configuration default="false" name="TestSamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="week4.TestSamples" />
       <option name="VM_PARAMETERS" />
@@ -451,13 +421,13 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="OverlapGraphTest.testGetOverlapGraph" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="DeBruijnStringTest.testExistsInListMultipleTimes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="main" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="week4" />
-      <option name="MAIN_CLASS_NAME" value="week4.OverlapGraphTest" />
-      <option name="METHOD_NAME" value="testGetOverlapGraph" />
+      <option name="MAIN_CLASS_NAME" value="week4.DeBruijnStringTest" />
+      <option name="METHOD_NAME" value="testExistsInListMultipleTimes" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -469,13 +439,29 @@
       </option>
       <envs />
       <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DeBruijnStringTest.testRemoveMultipleValues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="main" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="week4" />
+      <option name="MAIN_CLASS_NAME" value="week4.DeBruijnStringTest" />
+      <option name="METHOD_NAME" value="testRemoveMultipleValues" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -513,6 +499,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -538,19 +537,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -607,19 +593,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.StringReconstructionTest.testSortLexicographic" />
-      <item index="1" class="java.lang.String" itemvalue="Application.TestSamples" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.OverlapGraphTest.testConstructSequence" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.OverlapGraphTest.testConstructOverlapGraph" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.OverlapGraphTest.testGetOverlapGraph" />
+      <item index="0" class="java.lang.String" itemvalue="Application.TestSamples" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.OverlapGraphTest.testConstructSequence" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.OverlapGraphTest.testConstructOverlapGraph" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.DeBruijnStringTest.testExistsInListMultipleTimes" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.DeBruijnStringTest.testRemoveMultipleValues" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.TestSamples" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.OverlapGraphTest.testConstructOverlapGraph" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.OverlapGraphTest.testConstructSequence" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.OverlapGraphTest.testGetOverlapGraph" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.StringReconstructionTest.testSortLexicographic" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.DeBruijnStringTest.testRemoveMultipleValues" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.DeBruijnStringTest.testExistsInListMultipleTimes" />
+        <item index="2" class="java.lang.String" itemvalue="Application.TestSamples" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.OverlapGraphTest.testConstructOverlapGraph" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.OverlapGraphTest.testConstructSequence" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -638,7 +624,11 @@
       <created>1386282705140</created>
       <updated>1386282705140</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="-OverlapGraph solved&#10;-StringReconstruction solved&#10;">
+      <created>1386282719196</created>
+      <updated>1386282719196</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -646,7 +636,7 @@
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44768068" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4467169" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -666,8 +656,8 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -695,58 +685,98 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/StringReconstruction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1190" selection-end="1190" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#433#441#0" expanded="true" />
-            <element signature="e#490#498#0" expanded="true" />
-            <element signature="e#755#763#0" expanded="true" />
-          </folding>
+        <state line="46" column="0" selection-start="1190" selection-end="1190" vertical-scroll-proportion="0.0" vertical-offset="782" max-vertical-offset="952">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/StringReconstructionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="8" selection-start="907" selection-end="907" vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="986">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#648#656#0" expanded="true" />
-            <element signature="e#1064#1072#0" expanded="true" />
-          </folding>
+        <state line="36" column="8" selection-start="907" selection-end="907" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="986">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/OverlapGraphTest.java">
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/TestSamples.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="24" selection-start="268" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
+        <state line="11" column="80" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="493">
           <folding>
-            <element signature="e#597#611#0" expanded="true" />
-            <element signature="e#659#667#0" expanded="true" />
-            <element signature="e#715#723#0" expanded="true" />
-            <element signature="e#773#781#0" expanded="true" />
-            <element signature="e#830#838#0" expanded="true" />
-            <element signature="e#1459#1467#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/OverlapGraph.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="10" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1564">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/OverlapGraphTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="24" selection-start="268" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1445">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/StringReconstructionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="8" selection-start="907" selection-end="907" vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="986">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/OverlapGraphTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="24" selection-start="268" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/OverlapGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="10" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1564">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1092#1100#0" expanded="true" />
-            <element signature="e#1730#1744#0" expanded="true" />
-            <element signature="e#1879#1887#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/TestSamples.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="80" selection-start="283" selection-end="283" vertical-scroll-proportion="0.38477367" vertical-offset="0" max-vertical-offset="493">
+        <state line="11" column="80" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/StringReconstruction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="0" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.0" vertical-offset="430" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/DeBruijnStringTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="35" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0" vertical-offset="166" max-vertical-offset="1037">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#582#590#0" expanded="true" />
+            <element signature="e#820#828#0" expanded="true" />
+            <element signature="e#1142#1150#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/DeBruijnString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.7758945" vertical-offset="183" max-vertical-offset="1360">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#471#493#0" expanded="true" />
+            <element signature="e#1021#1043#0" expanded="true" />
+            <element signature="e#1304#1312#0" expanded="true" />
           </folding>
         </state>
       </provider>
