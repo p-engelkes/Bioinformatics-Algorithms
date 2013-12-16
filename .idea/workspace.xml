@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dc343e5-1085-4f75-9235-1cf958b4958f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assignments/src/main/java/week4/DeBruijnString.java" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week4/DeBruijnString.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assignments/src/main/java/week4/DeBruijnStringTest.java" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week4/DeBruijnStringTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week4/EulerianCycle.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week4/EulerianCycleString.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week4/EulerianCycleTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week4/EulerianPath.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week4/EulerianPathTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week6/GlobalAlignment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week6/LongestCommonSubsequence.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week6/ManhattanTourist.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week6/ManhattanTouristTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week4/ReadAdjacencyList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week5/ReadAdjacencyList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week6/ReadManhattanTourist.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week5/StringReconstruction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week6/TestSamples.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week5/kUniversalCircularString.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assignments/src/main/java/week4/TestSamples.java" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week4/TestSamples.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
     </list>
     <ignored path="Bioinformatics-Algorithms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,7 +85,7 @@
       <file leaf-file-name="StringReconstruction.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/StringReconstruction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="0" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.0" vertical-offset="387" max-vertical-offset="918">
+            <state line="45" column="0" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="952">
               <folding />
             </state>
           </provider>
@@ -89,10 +103,8 @@
       <file leaf-file-name="TestSamples.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/TestSamples.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="80" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="11" column="63" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="425">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,12 +112,9 @@
       <file leaf-file-name="DeBruijnString.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/DeBruijnString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.7758945" vertical-offset="183" max-vertical-offset="1360">
+            <state line="35" column="0" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.8691983" vertical-offset="183" max-vertical-offset="1360">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#471#493#0" expanded="true" />
-                <element signature="e#1021#1043#0" expanded="true" />
-                <element signature="e#1304#1312#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,12 +124,7 @@
         <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/DeBruijnStringTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="31" column="35" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0" vertical-offset="166" max-vertical-offset="1037">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#582#590#0" expanded="true" />
-                <element signature="e#820#828#0" expanded="true" />
-                <element signature="e#1142#1150#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -244,34 +248,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bioinformatics-Algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bioinformatics-Algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="week4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -321,6 +297,34 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bioinformatics-Algorithms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bioinformatics-Algorithms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="week4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -499,19 +503,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -537,6 +528,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -636,7 +640,7 @@
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4467169" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44629014" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -645,7 +649,6 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -656,6 +659,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
@@ -685,6 +689,57 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/StringReconstruction.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="0" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/StringReconstructionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="8" selection-start="907" selection-end="907" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="986">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/TestSamples.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="63" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/DeBruijnString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.0" vertical-offset="183" max-vertical-offset="1360">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/DeBruijnStringTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="35" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0" vertical-offset="166" max-vertical-offset="1037">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/OverlapGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="10" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1564">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/OverlapGraphTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="24" selection-start="268" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1445">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/StringReconstruction.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="0" selection-start="1190" selection-end="1190" vertical-scroll-proportion="0.0" vertical-offset="782" max-vertical-offset="952">
           <folding />
         </state>
@@ -700,9 +755,7 @@
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/TestSamples.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="80" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="493">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -743,10 +796,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/TestSamples.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="80" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="11" column="63" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="425">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -760,23 +811,15 @@
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/DeBruijnStringTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="35" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0" vertical-offset="166" max-vertical-offset="1037">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#582#590#0" expanded="true" />
-            <element signature="e#820#828#0" expanded="true" />
-            <element signature="e#1142#1150#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/DeBruijnString.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.7758945" vertical-offset="183" max-vertical-offset="1360">
+        <state line="35" column="0" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.8691983" vertical-offset="183" max-vertical-offset="1360">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#471#493#0" expanded="true" />
-            <element signature="e#1021#1043#0" expanded="true" />
-            <element signature="e#1304#1312#0" expanded="true" />
           </folding>
         </state>
       </provider>
