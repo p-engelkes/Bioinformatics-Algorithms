@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dc343e5-1085-4f75-9235-1cf958b4958f" name="Default" comment="Task 4 week 6 working">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week6/Blosum62.java" />
-      <change type="DELETED" beforePath="C:\Users\Patrick\workspace\Bioinformatics-Algorithms\Assignments\src\main\java\week6\LongestCommonSubsequence.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Patrick\workspace\Bioinformatics-Algorithms\Assignments\src\main\java\week6\ManhattanTouristTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Patrick\workspace\Bioinformatics-Algorithms\Assignments\src\main\java\week6\ReadManhattanTourist.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Patrick\workspace\Bioinformatics-Algorithms\Assignments\src\main\java\week6\TestSamples.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week7/EditDistance.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week7/FittingAlignment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week7/OverlapAlignment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week7/TestSample.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Bioinformatics-Algorithms.iws" />
@@ -70,7 +69,17 @@
     <favorites_list name="Bioinformatics-Algorithms" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="TestSample.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week7/TestSample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="0" selection-start="2132" selection-end="2132" vertical-scroll-proportion="0.6017699" vertical-offset="0" max-vertical-offset="452">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -100,6 +109,10 @@
         <option value="$PROJECT_DIR$/Assignments/src/main/java/week6/LongestPathInDag.java" />
         <option value="$PROJECT_DIR$/Assignments/src/main/java/week6/ManhattanTourist.java" />
         <option value="$PROJECT_DIR$/Assignments/src/main/java/week6/TestSample.java" />
+        <option value="$PROJECT_DIR$/Assignments/src/main/java/week7/EditDistance.java" />
+        <option value="$PROJECT_DIR$/Assignments/src/main/java/week7/FittingAlignment.java" />
+        <option value="$PROJECT_DIR$/Assignments/src/main/java/week7/OverlapAlignment.java" />
+        <option value="$PROJECT_DIR$/Assignments/src/main/java/week7/TestSample.java" />
       </list>
     </option>
   </component>
@@ -201,7 +214,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="week6" />
+              <option name="myItemId" value="week7" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -290,6 +303,7 @@
       <recent name="junit.framework.TestCase" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="week7" />
       <recent name="week6" />
     </key>
   </component>
@@ -873,6 +887,34 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week7/EditDistance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="168" column="0" selection-start="4832" selection-end="4832" vertical-scroll-proportion="0.9512761" vertical-offset="2446" max-vertical-offset="2958">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week7/FittingAlignment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="180" column="0" selection-start="5146" selection-end="5146" vertical-scroll-proportion="0.95353985" vertical-offset="2629" max-vertical-offset="3162">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week7/OverlapAlignment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="183" column="0" selection-start="5140" selection-end="5140" vertical-scroll-proportion="0.95353985" vertical-offset="2680" max-vertical-offset="3213">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week7/TestSample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="2132" selection-end="2132" vertical-scroll-proportion="0.6017699" vertical-offset="0" max-vertical-offset="452">
+          <folding />
         </state>
       </provider>
     </entry>
