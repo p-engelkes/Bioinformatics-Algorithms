@@ -39,6 +39,24 @@ public class TrieMatchingTest {
     }
 
     @Test
+    public void findMatchingPatterns2() {
+        this.text = "AATCGGGTTCAATCGGGGT";
+        this.pattern.clear();
+        this.pattern.add("ATCG");
+        this.pattern.add("GGGT");
+
+        trieMatching = new TrieMatching(text, pattern, trieConstruction.constructTrie(pattern));
+
+        List<Integer> expected = new ArrayList<Integer>();
+        expected.add(1);
+        expected.add(4);
+        expected.add(11);
+        expected.add(15);
+
+        assertEquals(expected, trieMatching.findMatchingPatterns());
+    }
+
+    @Test
     public void testIsPatternPresent() {
         Tree trie = trieMatching.getTrie();
         Tree.Node<String, Integer> parent = trie.getRoot();

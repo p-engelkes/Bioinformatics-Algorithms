@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dc343e5-1085-4f75-9235-1cf958b4958f" name="Default" comment="Week9">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week9/TrieMatching.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week9/TrieMatchingTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assignments/src/main/java/week9/TestSamples.java" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week9/TestSamples.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week9/ConstructSuffixTrie.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week9/ConstructSuffixTrieTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assignments/src/main/java/week9/Tree.java" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week9/Tree.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assignments/src/main/java/week9/TrieMatching.java" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week9/TrieMatching.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assignments/src/main/java/week9/TrieMatchingTest.java" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week9/TrieMatchingTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Bioinformatics-Algorithms.iws" />
@@ -89,34 +91,60 @@
       <file leaf-file-name="Tree.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/Tree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="13" selection-start="1770" selection-end="1770" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="1343">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TrieMatching.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/TrieMatching.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="30" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.1875" vertical-offset="620" max-vertical-offset="1649">
+            <state line="117" column="1" selection-start="3364" selection-end="3364" vertical-scroll-proportion="0.0" vertical-offset="818" max-vertical-offset="1717">
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#623#632#0" expanded="true" />
-                <element signature="e#2546#2547#0" expanded="true" />
-                <element signature="e#2578#2579#0" expanded="true" />
+                <element signature="e#591#592#0" expanded="true" />
+                <element signature="e#618#619#0" expanded="true" />
+                <element signature="e#2407#2408#0" expanded="true" />
+                <element signature="e#2447#2448#0" expanded="true" />
+                <element signature="e#2491#2492#0" expanded="true" />
+                <element signature="e#2531#2532#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrieMatchingTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TrieMatching.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/TrieMatching.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="93" column="1" selection-start="2672" selection-end="2672" vertical-scroll-proportion="0.0" vertical-offset="835" max-vertical-offset="1683">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#623#632#0" expanded="true" />
+                <element signature="e#2635#2636#0" expanded="true" />
+                <element signature="e#2667#2668#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConstructSuffixTrieTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/ConstructSuffixTrieTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConstructSuffixTrie.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/ConstructSuffixTrie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrieMatchingTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/TrieMatchingTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="38" selection-start="781" selection-end="781" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1139">
+            <state line="78" column="1" selection-start="2435" selection-end="2435" vertical-scroll-proportion="0.8277027" vertical-offset="836" max-vertical-offset="1428">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#321#329#0" expanded="true" />
                 <element signature="e#830#839#0" expanded="true" />
+                <element signature="e#1333#1342#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,8 +153,10 @@
       <file leaf-file-name="TestSamples.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/TestSamples.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="8" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-              <folding />
+            <state line="17" column="8" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -192,10 +222,12 @@
         <option value="$PROJECT_DIR$/Assignments/src/main/java/week9/TrieConstruction.java" />
         <option value="$PROJECT_DIR$/Assignments/src/main/java/week9/ReadPatternsForTrieConstruction.java" />
         <option value="$PROJECT_DIR$/Assignments/src/main/java/week9/ReadPatternsForTrieConstructionTest.java" />
-        <option value="$PROJECT_DIR$/Assignments/src/main/java/week9/Tree.java" />
         <option value="$PROJECT_DIR$/Assignments/src/main/java/week9/TestSamples.java" />
-        <option value="$PROJECT_DIR$/Assignments/src/main/java/week9/TrieMatchingTest.java" />
+        <option value="$PROJECT_DIR$/Assignments/src/main/java/week9/ConstructSuffixTrie.java" />
+        <option value="$PROJECT_DIR$/Assignments/src/main/java/week9/Tree.java" />
         <option value="$PROJECT_DIR$/Assignments/src/main/java/week9/TrieMatching.java" />
+        <option value="$PROJECT_DIR$/Assignments/src/main/java/week9/ConstructSuffixTrieTest.java" />
+        <option value="$PROJECT_DIR$/Assignments/src/main/java/week9/TrieMatchingTest.java" />
       </list>
     </option>
   </component>
@@ -713,15 +745,19 @@
       <created>1389595094008</created>
       <updated>1389595094008</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Week9">
+      <created>1389595214556</created>
+      <updated>1389595214556</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31409544" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31409544" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -736,7 +772,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11980831" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17891374" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39844617" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -775,16 +811,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/StringReconstructionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="8" selection-start="907" selection-end="907" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="986" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/TestSamples.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="63" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="425" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/DeBruijnString.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="0" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.0" vertical-offset="183" max-vertical-offset="1360" />
@@ -1013,27 +1039,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/Tree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="13" selection-start="1770" selection-end="1770" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="1343">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/TestSamples.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="8" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/TrieMatchingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="38" selection-start="781" selection-end="781" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1139">
+        <state line="17" column="8" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#321#329#0" expanded="true" />
-            <element signature="e#830#839#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1045,14 +1055,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/ConstructSuffixTrie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/Tree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="1" selection-start="3364" selection-end="3364" vertical-scroll-proportion="0.0" vertical-offset="818" max-vertical-offset="1717">
+          <folding>
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#2407#2408#0" expanded="true" />
+            <element signature="e#2447#2448#0" expanded="true" />
+            <element signature="e#2491#2492#0" expanded="true" />
+            <element signature="e#2531#2532#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/TrieMatching.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="30" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.1875" vertical-offset="620" max-vertical-offset="1649">
+        <state line="93" column="1" selection-start="2672" selection-end="2672" vertical-scroll-proportion="0.0" vertical-offset="835" max-vertical-offset="1683">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#623#632#0" expanded="true" />
-            <element signature="e#2546#2547#0" expanded="true" />
-            <element signature="e#2578#2579#0" expanded="true" />
+            <element signature="e#2635#2636#0" expanded="true" />
+            <element signature="e#2667#2668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/ConstructSuffixTrieTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/TrieMatchingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="1" selection-start="2435" selection-end="2435" vertical-scroll-proportion="0.8277027" vertical-offset="836" max-vertical-offset="1428">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#321#329#0" expanded="true" />
+            <element signature="e#830#839#0" expanded="true" />
+            <element signature="e#1333#1342#0" expanded="true" />
           </folding>
         </state>
       </provider>

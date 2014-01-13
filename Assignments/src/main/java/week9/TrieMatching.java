@@ -35,12 +35,15 @@ public class TrieMatching {
             }
         }
 
+        for (Integer i : patternList) {
+            System.out.print(i + " ");
+        }
         return patternList;
     }
 
     public boolean isPatternPresent(Tree.Node<String, Integer> parent, int count) {
         if (parent.getChildren().size() > 0) {
-            if (this.text.length() >= 2 + count) {
+            if (this.text.length() >= count + 1) {
                 String pattern = this.text.substring(count, count + 1);
                 if (isInChildren(parent.getChildren(), pattern)) {
                     parent = getNodeWithSameDataAsPattern(parent.getChildren(), pattern);

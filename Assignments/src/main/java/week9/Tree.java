@@ -12,6 +12,7 @@ import java.util.List;
  */
 public class Tree<String> {
     private Node<String, Integer> root;
+    private int count = 0;
 
     public Tree(String rootData, int position) {
         root = new Node<String, Integer>();
@@ -44,7 +45,7 @@ public class Tree<String> {
     }
 
     public void traverseThroughTree(List<Node<String, Integer>> children, Node<String, Integer> parent) throws FileNotFoundException, UnsupportedEncodingException {
-        PrintWriter writer = new PrintWriter("C:\\Users\\Patrick\\Desktop\\Coursera\\BioinformaticsAlgorithm\\week9\\SolutionForTrieConstruction.txt", "UTF-8");
+        PrintWriter writer = new PrintWriter("C:\\Users\\pengelkes\\Desktop\\Patrick\\SolutionForTrieConstruction.txt", "UTF-8");
         if (children != null) {
             for (Node<String, Integer> child : children) {
                 writer.print(parent.getPosition() + " ");
@@ -55,8 +56,20 @@ public class Tree<String> {
         }
     }
 
+    public void countChildren(List<Node<String, Integer>> children, Node<String, Integer> parent) {
+        if (children.size() > 1) {
+            for (Node<String, Integer> child : children) {
+                count++;
+                countChildren(child.getChildren(), child);
+            }
+        }
+
+        System.out.println(count);
+    }
+
     public static class Node<String, Integer> {
         private int position;
+        private int numberOfChildren;
         private String data;
         private Node<String, Integer> parent;
         private List<Node<String, Integer>> children;
@@ -91,6 +104,14 @@ public class Tree<String> {
 
         public void setPosition(int position) {
             this.position = position;
+        }
+
+        public int getNumberOfChildren() {
+            return numberOfChildren;
+        }
+
+        public void setNumberOfChildren(int numberOfChildren) {
+            this.numberOfChildren = numberOfChildren;
         }
     }
 
