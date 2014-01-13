@@ -1,6 +1,6 @@
 package week9;
 
-import java.util.ArrayList;
+import java.io.FileNotFoundException;
 import java.util.List;
 
 /**
@@ -9,12 +9,12 @@ import java.util.List;
  */
 public class TestSamples {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
+        String pathToFile = "C:\\Users\\Patrick\\Desktop\\Coursera\\BioinformaticsAlgorithm\\week9\\DataForTrieConstruction.txt";
         TrieConstruction trieConstruction = new TrieConstruction();
-        List<String> patternList = new ArrayList<String>();
-        patternList.add("GGTA");
-        patternList.add("CG");
-        patternList.add("GGC");
+        ReadPatternsForTrieConstruction readPatterns = new ReadPatternsForTrieConstruction(pathToFile);
+
+        List<String> patternList = readPatterns.readPatterns();
         trieConstruction.constructTrie(patternList);
     }
 }

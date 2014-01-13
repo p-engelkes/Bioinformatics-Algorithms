@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dc343e5-1085-4f75-9235-1cf958b4958f" name="Default" comment="Week9">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week9/ReadPatternsForTrieConstruction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week9/ReadPatternsForTrieConstructionTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assignments/src/main/java/week9/Tree.java" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week9/Tree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assignments/src/main/java/week9/TrieConstruction.java" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week9/TrieConstruction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week9/TrieMatching.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week9/TrieMatchingTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assignments/src/main/java/week9/TestSamples.java" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week9/TestSamples.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Bioinformatics-Algorithms.iws" />
@@ -90,7 +89,7 @@
       <file leaf-file-name="Tree.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/Tree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="13" selection-start="1769" selection-end="1769" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="1343">
+            <state line="53" column="13" selection-start="1770" selection-end="1770" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="1343">
               <folding />
             </state>
           </provider>
@@ -99,7 +98,7 @@
       <file leaf-file-name="TrieMatching.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/TrieMatching.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="30" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.3597973" vertical-offset="518" max-vertical-offset="1649">
+            <state line="43" column="30" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.1875" vertical-offset="620" max-vertical-offset="1649">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#623#632#0" expanded="true" />
@@ -710,7 +709,11 @@
       <created>1389308196332</created>
       <updated>1389308196332</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Week9">
+      <created>1389595094008</created>
+      <updated>1389595094008</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1012,7 +1015,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/Tree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="13" selection-start="1769" selection-end="1769" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="1343">
+        <state line="53" column="13" selection-start="1770" selection-end="1770" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="1343">
           <folding />
         </state>
       </provider>
@@ -1044,7 +1047,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/TrieMatching.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="30" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.3597973" vertical-offset="518" max-vertical-offset="1649">
+        <state line="43" column="30" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.1875" vertical-offset="620" max-vertical-offset="1649">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#623#632#0" expanded="true" />
