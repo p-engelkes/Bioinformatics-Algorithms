@@ -12,28 +12,35 @@ public class TrieConstruction {
     private Tree trie;
 
     public Tree constructTrie(List<String> patternList) {
-        trie = new Tree("0");
+        trie = new Tree("", 1);
 
         Tree.Node root = trie.getRoot();
-        List<Tree.Node<String>> children = new ArrayList<Tree.Node<String>>();
+        List<Tree.Node<String, Integer>> children = new ArrayList<Tree.Node<String, Integer>>();
         root.setChildren(children);
+
+        int positionOfNode = 2;
 
         for (String pattern : patternList) {
             List<Object> notInTreeList = findFirstNodeNotInTree(pattern, root);
-            Tree.Node nodeNotInTree = (Tree.Node) notInTreeList.get(0);
-            int position = (Integer) notInTreeList.get(1);
-            pattern = pattern.substring(position);
-            for (int i = 0; i < pattern.length(); i++) {
-                List<Tree.Node<String>> newChildren = new ArrayList<Tree.Node<String>>();
-                Tree.Node node = new Tree.Node();
-                node.setParent(nodeNotInTree);
-                node.setData(String.valueOf(pattern.charAt(i)));
-                node.setChildren(newChildren);
-                nodeNotInTree.getChildren().add(node);
+            if (notInTreeList.size() > 0) {
+                Tree.Node nodeNotInTree = (Tree.Node) notInTreeList.get(0);
+                int position = (Integer) notInTreeList.get(1);
+                pattern = pattern.substring(position);
+                for (int i = 0; i < pattern.length(); i++) {
+                    List<Tree.Node<String, Integer>> newChildren = new ArrayList<Tree.Node<String, Integer>>();
+                    Tree.Node node = new Tree.Node();
+                    node.setParent(nodeNotInTree);
+                    node.setData(String.valueOf(pattern.charAt(i)));
+                    node.setPosition(positionOfNode);
+                    positionOfNode++;
+                    node.setChildren(newChildren);
+                    nodeNotInTree.getChildren().add(node);
+                    nodeNotInTree = node;
+                }
             }
+
         }
-
-
+        trie.toString();
         return trie;
     }
 
@@ -45,8 +52,8 @@ public class TrieConstruction {
         for (int i = 0; i < pattern.length(); i++) {
             boolean found = false;
             String stringToCompare = String.valueOf(pattern.charAt(i));
-            List<Tree.Node<String>> children = parent.getChildren();
-            for (Tree.Node<String> node : children) {
+            List<Tree.Node<String, Integer>> children = parent.getChildren();
+            for (Tree.Node<String, Integer> node : children) {
                 if (node.getData().equals(stringToCompare)) {
                     found = true;
                     parent = node;
@@ -63,6 +70,5 @@ public class TrieConstruction {
 
         return returnList;
     }
-
 
 }

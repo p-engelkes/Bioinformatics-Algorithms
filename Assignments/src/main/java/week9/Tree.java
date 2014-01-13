@@ -1,5 +1,8 @@
 package week9;
 
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,26 +11,55 @@ import java.util.List;
  * Time: 11:38
  */
 public class Tree<String> {
-    private Node<String> root;
+    private Node<String, Integer> root;
 
-    public Tree(String rootData) {
-        root = new Node<String>();
-        root.data = rootData;
-        root.children = new ArrayList<Node<String>>();
+    public Tree(String rootData, int position) {
+        root = new Node<String, Integer>();
+        root.setData(rootData);
+        root.setPosition(position);
+        root.children = new ArrayList<Node<String, Integer>>();
     }
 
-    public Node<String> getRoot() {
+    public Node<String, Integer> getRoot() {
         return root;
     }
 
-    public void setRoot(Node<String> root) {
+    public void setRoot(Node<String, Integer> root) {
         this.root = root;
     }
 
-    public static class Node<String> {
+    @Override
+    public java.lang.String toString() {
+        List<Node<String, Integer>> children = root.getChildren();
+        Node<String, Integer> parent = root;
+        try {
+            traverseThroughTree(children, parent);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+        return "";
+    }
+
+    public void traverseThroughTree(List<Node<String, Integer>> children, Node<String, Integer> parent) throws FileNotFoundException, UnsupportedEncodingException {
+        PrintWriter writer = new PrintWriter("C:\\Users\\Patrick\\Desktop\\Coursera\\BioinformaticsAlgorithm\\week9\\SolutionForTrieConstruction.txt", "UTF-8");
+        if (children != null) {
+            for (Node<String, Integer> child : children) {
+                writer.print(parent.getPosition() + " ");
+                writer.print(child.getPosition() + " ");
+                writer.println(child.getData());
+                traverseThroughTree(child.getChildren(), child);
+            }
+        }
+    }
+
+    public static class Node<String, Integer> {
+        private int position;
         private String data;
-        private Node<String> parent;
-        private List<Node<String>> children;
+        private Node<String, Integer> parent;
+        private List<Node<String, Integer>> children;
 
         public String getData() {
             return this.data;
@@ -37,20 +69,28 @@ public class Tree<String> {
             this.data = data;
         }
 
-        public Node<String> getParent() {
+        public Node<String, Integer> getParent() {
             return this.parent;
         }
 
-        public void setParent(Node<String> parent) {
+        public void setParent(Node<String, Integer> parent) {
             this.parent = parent;
         }
 
-        public List<Node<String>> getChildren() {
+        public List<Node<String, Integer>> getChildren() {
             return this.children;
         }
 
-        public void setChildren(List<Node<String>> children) {
+        public void setChildren(List<Node<String, Integer>> children) {
             this.children = children;
+        }
+
+        public int getPosition() {
+            return this.position;
+        }
+
+        public void setPosition(int position) {
+            this.position = position;
         }
     }
 

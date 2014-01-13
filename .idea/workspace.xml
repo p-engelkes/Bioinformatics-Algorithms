@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6dc343e5-1085-4f75-9235-1cf958b4958f" name="Default" comment="Task 4 week 6 working">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week8/GreedySorting.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week8/NumberOfBreakpoints.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week8/ReadForNumberOfBreakpoints.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week8/ReverseComplement.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week8/SharedKMers.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week8/TestSample.java" />
+    <list default="true" id="6dc343e5-1085-4f75-9235-1cf958b4958f" name="Default" comment="Week9">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week9/ReadPatternsForTrieConstruction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week9/ReadPatternsForTrieConstructionTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assignments/src/main/java/week9/Tree.java" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week9/Tree.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assignments/src/main/java/week9/TrieConstruction.java" afterPath="$PROJECT_DIR$/Assignments/src/main/java/week9/TrieConstruction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Bioinformatics-Algorithms.iws" />
@@ -63,6 +61,23 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/Assignments/src/main/java/week9/TrieMatching.java" line="29" class="week9.TrieMatching" package="week9">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -71,7 +86,71 @@
     <favorites_list name="Bioinformatics-Algorithms" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="Tree.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/Tree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="13" selection-start="1769" selection-end="1769" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="1343">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrieMatching.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/TrieMatching.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="30" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.3597973" vertical-offset="518" max-vertical-offset="1649">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#623#632#0" expanded="true" />
+                <element signature="e#2546#2547#0" expanded="true" />
+                <element signature="e#2578#2579#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrieMatchingTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/TrieMatchingTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="38" selection-start="781" selection-end="781" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1139">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#321#329#0" expanded="true" />
+                <element signature="e#830#839#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestSamples.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/TestSamples.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="8" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrieConstruction.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/TrieConstruction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="20" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReadPatternsForTrieConstruction.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/ReadPatternsForTrieConstruction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="32" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="663">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -111,12 +190,21 @@
         <option value="$PROJECT_DIR$/Assignments/src/main/java/week8/SharedKMers.java" />
         <option value="$PROJECT_DIR$/Assignments/src/main/java/week8/NumberOfBreakpoints.java" />
         <option value="$PROJECT_DIR$/Assignments/src/main/java/week8/GreedySorting.java" />
+        <option value="$PROJECT_DIR$/Assignments/src/main/java/week9/TrieConstruction.java" />
+        <option value="$PROJECT_DIR$/Assignments/src/main/java/week9/ReadPatternsForTrieConstruction.java" />
+        <option value="$PROJECT_DIR$/Assignments/src/main/java/week9/ReadPatternsForTrieConstructionTest.java" />
+        <option value="$PROJECT_DIR$/Assignments/src/main/java/week9/Tree.java" />
+        <option value="$PROJECT_DIR$/Assignments/src/main/java/week9/TestSamples.java" />
+        <option value="$PROJECT_DIR$/Assignments/src/main/java/week9/TrieMatchingTest.java" />
+        <option value="$PROJECT_DIR$/Assignments/src/main/java/week9/TrieMatching.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="960" />
-    <option name="height" value="1040" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -190,7 +278,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -213,12 +300,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="week8" />
+              <option name="myItemId" value="week9" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -298,6 +386,7 @@
       <recent name="junit.framework.TestCase" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="week9" />
       <recent name="week4" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -306,91 +395,9 @@
       <recent name="week6" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestSamples (1)">
-    <configuration default="false" name="TestSamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="week4.TestSamples" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="main" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="OverlapGraphTest.testConstructOverlapGraph" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="main" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="week4" />
-      <option name="MAIN_CLASS_NAME" value="week4.OverlapGraphTest" />
-      <option name="METHOD_NAME" value="testConstructOverlapGraph" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="DeBruijnStringTest.testExistsInListMultipleTimes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="main" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="week4" />
-      <option name="MAIN_CLASS_NAME" value="week4.DeBruijnStringTest" />
-      <option name="METHOD_NAME" value="testExistsInListMultipleTimes" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="DeBruijnStringTest.testRemoveMultipleValues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="main" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="week4" />
-      <option name="MAIN_CLASS_NAME" value="week4.DeBruijnStringTest" />
-      <option name="METHOD_NAME" value="testRemoveMultipleValues" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestSamples (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="week6.TestSamples" />
+  <component name="RunManager" selected="JUnit.TrieMatchingTest.findMatchingPatterns">
+    <configuration default="false" name="TestSamples (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week9.TestSamples" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -406,7 +413,109 @@
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ReadPatternsForTrieConstructionTest.testReadPatterns" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="main" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="week9" />
+      <option name="MAIN_CLASS_NAME" value="week9.ReadPatternsForTrieConstructionTest" />
+      <option name="METHOD_NAME" value="testReadPatterns" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TrieMatchingTest.testIsInChildren" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="main" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="week9" />
+      <option name="MAIN_CLASS_NAME" value="week9.TrieMatchingTest" />
+      <option name="METHOD_NAME" value="testIsInChildren" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TrieMatchingTest.testIsPatternPresent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="main" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="week9" />
+      <option name="MAIN_CLASS_NAME" value="week9.TrieMatchingTest" />
+      <option name="METHOD_NAME" value="testIsPatternPresent" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TrieMatchingTest.findMatchingPatterns" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="main" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="week9" />
+      <option name="MAIN_CLASS_NAME" value="week9.TrieMatchingTest" />
+      <option name="METHOD_NAME" value="findMatchingPatterns" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
@@ -537,19 +646,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.TestSamples" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.OverlapGraphTest.testConstructOverlapGraph" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.DeBruijnStringTest.testExistsInListMultipleTimes" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.DeBruijnStringTest.testRemoveMultipleValues" />
-      <item index="4" class="java.lang.String" itemvalue="Application.TestSamples (1)" />
+      <item index="0" class="java.lang.String" itemvalue="Application.TestSamples (2)" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ReadPatternsForTrieConstructionTest.testReadPatterns" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TrieMatchingTest.testIsInChildren" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TrieMatchingTest.testIsPatternPresent" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TrieMatchingTest.findMatchingPatterns" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.TestSamples (1)" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.DeBruijnStringTest.testRemoveMultipleValues" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.DeBruijnStringTest.testExistsInListMultipleTimes" />
-        <item index="3" class="java.lang.String" itemvalue="Application.TestSamples" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.OverlapGraphTest.testConstructOverlapGraph" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TrieMatchingTest.findMatchingPatterns" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TrieMatchingTest.testIsPatternPresent" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TrieMatchingTest.testIsInChildren" />
+        <item index="3" class="java.lang.String" itemvalue="Application.TestSamples (2)" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ReadPatternsForTrieConstructionTest.testReadPatterns" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -593,34 +702,42 @@
       <created>1387232497913</created>
       <updated>1387232497913</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Week8">
+      <created>1389308095512</created>
+      <updated>1389308095512</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Week9">
+      <created>1389308196332</created>
+      <updated>1389308196332</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="960" height="1040" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44519773" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31409544" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.79578245" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45948946" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852387" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4345898" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.399137" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11980831" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39844617" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -641,7 +758,9 @@
     </option>
     <MESSAGE value="-OverlapGraph solved&#10;-StringReconstruction solved&#10;" />
     <MESSAGE value="Task 4 week 6 working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task 4 week 6 working" />
+    <MESSAGE value="Week8" />
+    <MESSAGE value="Week9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Week9" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -653,46 +772,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/StringReconstruction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="952" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/StringReconstructionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="8" selection-start="907" selection-end="907" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="986" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/TestSamples.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="63" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="425" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/DeBruijnString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.0" vertical-offset="183" max-vertical-offset="1360" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/DeBruijnStringTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="35" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="1037" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/OverlapGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="10" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1564" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/OverlapGraphTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="24" selection-start="268" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1445" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/StringReconstruction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="952" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week4/StringReconstructionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="8" selection-start="907" selection-end="907" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="986" />
@@ -820,157 +899,157 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week6/Blosum62.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="165" column="0" selection-start="7074" selection-end="7074" vertical-scroll-proportion="0.9751773" vertical-offset="1980" max-vertical-offset="2907">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#506#523#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="165" column="0" selection-start="7074" selection-end="7074" vertical-scroll-proportion="0.9751773" vertical-offset="1980" max-vertical-offset="2907" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week6/Change.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#411#429#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="40" column="0" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week6/CreateLongestPathInDagFromFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="0" selection-start="1704" selection-end="1704" vertical-scroll-proportion="0.0" vertical-offset="174" max-vertical-offset="1020">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#659#674#0" expanded="true" />
-            <element signature="e#1314#1323#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="54" column="0" selection-start="1704" selection-end="1704" vertical-scroll-proportion="0.0" vertical-offset="174" max-vertical-offset="1020" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week6/GlobalAlignment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="0" selection-start="3734" selection-end="3734" vertical-scroll-proportion="0.0" vertical-offset="1300" max-vertical-offset="2227">
-          <folding />
-        </state>
+        <state line="125" column="0" selection-start="3734" selection-end="3734" vertical-scroll-proportion="0.0" vertical-offset="1300" max-vertical-offset="2227" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week6/LocalAlignment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="0" selection-start="4272" selection-end="4272" vertical-scroll-proportion="0.0" vertical-offset="1610" max-vertical-offset="2516">
-          <folding />
-        </state>
+        <state line="142" column="0" selection-start="4272" selection-end="4272" vertical-scroll-proportion="0.0" vertical-offset="1610" max-vertical-offset="2516" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week6/ManhattanTourist.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="0" selection-start="1554" selection-end="1554" vertical-scroll-proportion="0.9745455" vertical-offset="437" max-vertical-offset="1343">
-          <folding />
-        </state>
+        <state line="73" column="0" selection-start="1554" selection-end="1554" vertical-scroll-proportion="0.9745455" vertical-offset="437" max-vertical-offset="1343" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week6/LongestPathInDag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="0" selection-start="2550" selection-end="2550" vertical-scroll-proportion="0.0" vertical-offset="862" max-vertical-offset="1768">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#556#565#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="98" column="0" selection-start="2550" selection-end="2550" vertical-scroll-proportion="0.0" vertical-offset="862" max-vertical-offset="1768" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week6/TestSample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="8722" selection-end="8722" vertical-scroll-proportion="0.44208038" vertical-offset="0" max-vertical-offset="846">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="22" column="0" selection-start="8722" selection-end="8722" vertical-scroll-proportion="0.44208038" vertical-offset="0" max-vertical-offset="846" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week7/EditDistance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="168" column="0" selection-start="4832" selection-end="4832" vertical-scroll-proportion="0.9512761" vertical-offset="2446" max-vertical-offset="2958">
-          <folding />
-        </state>
+        <state line="168" column="0" selection-start="4832" selection-end="4832" vertical-scroll-proportion="0.9512761" vertical-offset="2446" max-vertical-offset="2958" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week7/FittingAlignment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="180" column="0" selection-start="5146" selection-end="5146" vertical-scroll-proportion="0.95353985" vertical-offset="2629" max-vertical-offset="3162">
-          <folding />
-        </state>
+        <state line="180" column="0" selection-start="5146" selection-end="5146" vertical-scroll-proportion="0.95353985" vertical-offset="2629" max-vertical-offset="3162" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week7/OverlapAlignment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="183" column="0" selection-start="5140" selection-end="5140" vertical-scroll-proportion="0.95353985" vertical-offset="2680" max-vertical-offset="3213">
-          <folding />
-        </state>
+        <state line="183" column="0" selection-start="5140" selection-end="5140" vertical-scroll-proportion="0.95353985" vertical-offset="2680" max-vertical-offset="3213" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week7/TestSample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="2132" selection-end="2132" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-          <folding />
-        </state>
+        <state line="16" column="0" selection-start="2132" selection-end="2132" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week8/TestSample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="22114" selection-end="22114" vertical-scroll-proportion="0.7839806" vertical-offset="17" max-vertical-offset="442">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="20" column="0" selection-start="22114" selection-end="22114" vertical-scroll-proportion="0.7839806" vertical-offset="17" max-vertical-offset="442" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week8/ReverseComplement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="947" selection-end="947" vertical-scroll-proportion="0.92" vertical-offset="255" max-vertical-offset="748">
-          <folding />
-        </state>
+        <state line="38" column="0" selection-start="947" selection-end="947" vertical-scroll-proportion="0.92" vertical-offset="255" max-vertical-offset="748" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week8/ReadForNumberOfBreakpoints.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.95150113" vertical-offset="251" max-vertical-offset="765">
-          <folding />
-        </state>
+        <state line="39" column="0" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.95150113" vertical-offset="251" max-vertical-offset="765" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week8/SharedKMers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="0" selection-start="6281" selection-end="6281" vertical-scroll-proportion="0.907489" vertical-offset="2614" max-vertical-offset="3128">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#302#325#0" expanded="true" />
-            <element signature="e#389#412#0" expanded="true" />
-            <element signature="e#941#949#0" expanded="true" />
-            <element signature="e#2663#2674#0" expanded="true" />
-            <element signature="e#3632#3641#0" expanded="true" />
-            <element signature="e#4309#4318#0" expanded="true" />
-            <element signature="e#5585#5608#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="178" column="0" selection-start="6281" selection-end="6281" vertical-scroll-proportion="0.907489" vertical-offset="2614" max-vertical-offset="3128" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week8/NumberOfBreakpoints.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="765" selection-end="765" vertical-scroll-proportion="0.907489" vertical-offset="217" max-vertical-offset="731">
+        <state line="37" column="0" selection-start="765" selection-end="765" vertical-scroll-proportion="0.907489" vertical-offset="217" max-vertical-offset="731" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week8/GreedySorting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="156" column="0" selection-start="5705" selection-end="5705" vertical-scroll-proportion="0.907489" vertical-offset="2240" max-vertical-offset="2754" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/ReadPatternsForTrieConstructionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="49" selection-start="244" selection-end="342" vertical-scroll-proportion="0.27453417" vertical-offset="0" max-vertical-offset="805">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week8/GreedySorting.java">
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/ReadPatternsForTrieConstruction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="156" column="0" selection-start="5705" selection-end="5705" vertical-scroll-proportion="0.907489" vertical-offset="2240" max-vertical-offset="2754">
+        <state line="12" column="32" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0" vertical-offset="27" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/TrieConstruction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="20" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.0" vertical-offset="329" max-vertical-offset="1360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/Tree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="13" selection-start="1769" selection-end="1769" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="1343">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/TestSamples.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="8" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/TrieMatchingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="38" selection-start="781" selection-end="781" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1139">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#349#358#0" expanded="true" />
+            <element signature="e#321#329#0" expanded="true" />
+            <element signature="e#830#839#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="40" selection-start="388" selection-end="388" vertical-scroll-proportion="0.4735376" vertical-offset="0" max-vertical-offset="359">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/src/main/java/week9/TrieMatching.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="30" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.3597973" vertical-offset="518" max-vertical-offset="1649">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#623#632#0" expanded="true" />
+            <element signature="e#2546#2547#0" expanded="true" />
+            <element signature="e#2578#2579#0" expanded="true" />
           </folding>
         </state>
       </provider>
